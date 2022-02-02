@@ -42,8 +42,16 @@ PRODUCT_COPY_FILES += \
 PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
     system/bin/backuptool_ab.sh \
     system/bin/backuptool_ab.functions \
-    system/bin/backuptool_postinstall.sh
-
+    system/bin/backuptool_postinstall.sh \
+    system/media/bootanimation.zip \
+    system/app/GoogleExtShared/GoogleExtShared.apk \
+    system/app/GooglePrintRecommendationService/GooglePrintRecommendationService.apk \
+    system/etc/permissions/privapp-permissions-google.xml \
+    system/priv-app/DocumentsUIGoogle/DocumentsUIGoogle.apk \
+    system/priv-app/GoogleExtServices/GoogleExtServices.apk \
+    system/priv-app/GooglePackageInstaller/GooglePackageInstaller.apk \
+    system/priv-app/TagGoogle/TagGoogle.apk
+ 
 ifneq ($(TARGET_BUILD_VARIANT),user)
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.ota.allow_downgrade=true
